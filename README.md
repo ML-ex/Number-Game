@@ -16,5 +16,5 @@ However, if they fail to get the correct number after 3 tries, regardless of whe
 The game should also keep their wins vs losses for as long as the window is open (so if they were to close the window, they would lose all the stats. Unless they are logged in, if they have an account and log in, they should always be able to view the number of games won and Number of games lost cumulatively)
 
 ## Technologies Used
-
+Javascript and its frameworks(React,Node js,Express Js)
 
