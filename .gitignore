@@ -1,0 +1,14 @@
+#Editor packages and settings
+.vscode/
+dist/
+# Optional npm cache directory
+.npm
+# Dependency directories
+node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
+# dotenv environment variables file
+.env
+.env.test
