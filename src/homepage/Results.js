@@ -8,9 +8,9 @@ class Results extends React.Component {
         const cardStyle = {
             color: "black",
             backgroundColor: "#75C3C8",
-            padding: "10px",
+            padding: "20px 0 0 15px",
             marginLeft: "650px",
-            marginTop: "-275px",
+            marginTop: "-310px",
             lineHeight: "30px",
             width: "250px",
             height: "275px"
@@ -30,8 +30,8 @@ class Results extends React.Component {
             label > Total Games Played:
             <
             input type = "text"
-            name = "name" / > < /label>  <
-            /form>
+            name = "name" / > < /label>  < /
+            form >
 
             <
             /div> </ >
