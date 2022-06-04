@@ -1,4 +1,4 @@
-
+import React from "react";
 
 class Rules extends React.Component {
     render() {
