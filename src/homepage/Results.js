@@ -20,24 +20,7 @@ class Results extends React.Component {
     render() {
        
         return ( 
-            <>
-           
-             <form>
-                <label>
-                Games Won:
-                <input type="text" name="name" />
-                </label>
-                <label>
-                Games Lost:
-                    <input type="text" name="name" />
-                </label>
-                <label>
-                Total Games Played:
-                    <input type="text" name="name" />
-                </label>
-            </form>
             <Game key={this.state.gameKey} newGame={this.newGame}/>
-            </>
         );
     }
 }
