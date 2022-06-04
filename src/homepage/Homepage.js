@@ -1,6 +1,6 @@
 import React from "react";
 import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import Rules from "./Rules.js";
 
 class Homepage extends React.Component {
     render() {
@@ -23,9 +23,8 @@ class Homepage extends React.Component {
             <
             h1 style = {
                 { color: "red", textAlign: "center", letterSpacing: "0.13em " }
-            } > Guess the Number < /h1 >  <
-            /div>             <
-            / >
+            } > Guess the Number < /h1 >  <Rules / > <
+            /div>             < / >
         );
     }
 }
