@@ -1,11 +1,27 @@
 import React from "react";
+import Game from '../homepage/Game.js';
 
 class Results extends React.Component {
-    render() {
+    constructor(props){
+        super(props);
 
-        const { name } = this.props;
+        this.state = {
+            gameKey: true
+        };
+
+        this.newGame = this.newGame.bind(this);
+    }
+
+    newGame(){
+        this.setState((prevState) => ({
+            gameKey: !prevState.gameKey
+        }));
+    }
+    render() {
+       
         return ( 
             <>
+           
              <form>
                 <label>
                 Games Won:
@@ -20,6 +36,7 @@ class Results extends React.Component {
                     <input type="text" name="name" />
                 </label>
             </form>
+            <Game key={this.state.gameKey} newGame={this.newGame}/>
             </>
         );
     }
