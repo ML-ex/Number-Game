@@ -24,19 +24,7 @@ class Rules extends React.Component {
             let you know
             if your guess was higher or lower than the random number. </li> 
             </ol> <h3 > Do you have what it takes to win ? </h3>  
-            <span > Use the register button below to create an account so you can save your progress or log in
-            if you already have one. </span> 
 
-
-            <div class = "btn" >
-            <button type = "button"
-            class = "btn-success"
-            style = {
-                { marginRight: "120px" }
-            } > Register </button>
-             <button type = "button"
-            class = "btn-primary" > Log In </button> 
-            </div> 
             </div>     
             </>
 
