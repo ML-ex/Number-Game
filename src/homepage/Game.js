@@ -83,7 +83,7 @@ class Game extends Component {
             <div>
                 <form className="form-inline" onSubmit={this.checkGuess}>
                         <h3 className="m-2">Give It A Try Below:</h3>
-                        <input name="guessNumber" type="number" min="1" max="100" ref={(input) => {this.guessNumber = input;}} className="form-control m-2"/>
+                        <input name="guessNumber" type="number" min="1" max="10" ref={(input) => {this.guessNumber = input;}} className="form-control m-2"/>
                         <button type="submit" ref={(button) => {this.submitGuess = button;}} className="btn btn-primary m-2">GUESS!</button>
                 </form>
                 <div>
@@ -98,3 +98,4 @@ class Game extends Component {
 }
 
 export default Game;
+

@@ -30,3 +30,4 @@ directory: './dist'
 }
 };
 module.exports = config;
+
