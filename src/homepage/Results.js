@@ -10,7 +10,7 @@ class Results extends React.Component {
             backgroundColor: "#75C3C8",
             padding: "20px 0 0 15px",
             marginLeft: "650px",
-            marginTop: "-310px",
+            marginTop: "-275px",
             lineHeight: "30px",
             width: "250px",
             height: "275px"

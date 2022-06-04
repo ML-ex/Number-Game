@@ -9,12 +9,12 @@ import Game from "./Game.js";
 class Homepage extends React.Component {
     render() {
         const cardStyle = {
-            height: "700px",
             backgroundColor: "#83D9DE",
             padding: "10px",
             fontFamily: "Sans-Serif",
             fontSize: "14px",
             width: "950px",
+            height: "600px",
             margin: "0 auto",
             marginTop: "20px"
 

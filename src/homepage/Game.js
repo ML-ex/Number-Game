@@ -13,9 +13,9 @@ class Game extends React.Component {
             fontSize: "14px",
             fontStyle: "italic",
             width: "500px",
-            height: "250px",
+            height: "200px",
             margin: "0 auto",
-            marginTop: "60px",
+            marginTop: "30px",
             lineHeight: "25px",
 
         };
@@ -27,7 +27,7 @@ class Game extends React.Component {
             <
             h2 style = {
                 { textAlign: "center", letterSpacing: "0.12em " }
-            } > Give It A Try Below < /h2>  <
+            } > Give It A Try Below < /h2> <br/ > <
             form className = "form-inline"
             style = {
                 { marginLeft: "50px" }
@@ -55,7 +55,7 @@ class Game extends React.Component {
             name = "name"
             placeholder = "CORRECT GUESS"
             style = {
-                { textAlign: "center", letterSpacing: "0.16em ", width: "355px" }
+                { textAlign: "center", letterSpacing: "0.16em ", width: "360px" }
             }
             />  < /
             label >
