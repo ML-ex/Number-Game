@@ -90,10 +90,7 @@ class Game extends Component {
                     <p className="m-2">{this.state.guesses}</p>
                     <p className={this.state.classLastResult}>{this.state.lastResult}</p>
                     <p className="m-2">{this.state.lowOrHi}</p>
-                    
-                    
                     <button ref={(button) => {this.startNewGame = button;}} className={this.state.classButtonNewGame} onClick={this.props.newGame}>Play Again</button>
-                    <button type='button'>EXIT GAME </button>
                 </div>
             </div>
         );
