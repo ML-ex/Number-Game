@@ -5,7 +5,7 @@ import Homepage from './homepage/Homepage.js'
 class App extends React.Component {
     render() {
 
-        return ( < Homepage name = "John" / > );
+        return ( < Homepage / > );
     }
 }
 
