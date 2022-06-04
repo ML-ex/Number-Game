@@ -1,24 +1,33 @@
 import React from "react";
+import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 import Rules from "./Rules.js";
 import Results from "./Results.js";
-import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
-import "../style.css";
 
 
 class Homepage extends React.Component {
     
     render() {
-        //const { name } = this.props;
+        const cardStyle = {
+            backgroundColor: "#83D9DE",
+            padding: "10px",
+            fontFamily: "Sans-Serif",
+            fontSize: "14px",
+            width: "950px",
+            height: "600px",
+            margin: "0 auto",
+            marginTop: "20px"
+
+        };
         return ( 
             <>
-            <h1 class="card-header" style={{color:"red"}}>
-            Guess the Number
-            </h1 >
-            <div className = "card-body">
-            <Rules/>
-            <Results/>
-            </div>         
-            </>
+            <div className = "card"
+            style = { cardStyle } >
+            <h1 style = {
+                { color: "red", textAlign: "center", letterSpacing: "0.13em " }
+            } > Guess the Number </h1 >  <Rules / > < Results / > 
+            </div>            
+             </>
         );
     }
 }
