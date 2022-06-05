@@ -5,7 +5,7 @@ class Game extends Component {
     constructor(props){
         super(props);
         this.state = {
-            randomNumber: Math.floor(Math.random() *100) + 1 + "",
+            randomNumber: Math.floor(Math.random() *10) + 1 + "",
             guesses: "",
             lastResult: "",
             lowOrHi: "",
@@ -38,11 +38,13 @@ class Game extends Component {
                 guesses: prevState.guesses === "" ? `Previous guesses: ${guessValue}` : `${prevState.guesses}, ${guessValue}`,
                 guessCount: prevState.guessCount + 1
             }));
-            if (guessValue === randomValue) {
+            
+
+                if (guessValue === randomValue) {
                 this.setState({
                     lastResult: "Good Job,You got it correct!",
                     lowOrHi: "",
-                    classLastResult: "m-2 p-1 bg-success",
+                    classLastResult: "m-1 p-5 bg-success",
                     classButtonNewGame: "btn btn-primary m-2"
                 });
 
@@ -51,12 +53,11 @@ class Game extends Component {
 
             } else if (this.state.guessCount === 3) {
                 this.setState({
-                    lastResult: "GAME OVER!",
+                    lastResult: `${'GAME OVER!! the correct number is'} ${Math.floor(Math.random() *10) + 1}`,
                     lowOrHi: "",
-                    classLastResult: "m-2 p-1 bg-danger",
-                    classButtonNewGame: "btn btn-primary m-2"
+                    classLastResult: "m-1 p-1 bg-danger",
+                    classButtonNewGame: "btn btn-primary m-2",
                 });
-
                 this.submitGuess.setAttribute("disabled", "disabled");
                 this.guessNumber.setAttribute("disabled", "disabled");
 
