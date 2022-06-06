@@ -54,8 +54,8 @@ class Game extends Component {
 
             } else if (this.state.guessCount === 3) {
                 this.setState({
-                    lastResult: "GAME OVER!!",
-                    lowOrHi: "",
+                    lastResult: `"GAME OVER!!!,The Correct number is ${this.state.randomNumber}"`,
+                    lowOrHi:" ",
                     classLastResult: "m-1 p-1 bg-danger",
                     classButtonNewGame: "btn btn-primary m-2",
                     
@@ -90,7 +90,7 @@ class Game extends Component {
                 <div>
                     <p className="m-2">{this.state.guesses}</p>
                     <p className={this.state.classLastResult}>{this.state.lastResult}</p>
-                    <p className="m-2">{this.state.lowOrHi}</p>
+                    <p className="m-2">{this.state.lowOrHi}</p>            
                     <button ref={(button) => {this.startNewGame = button;}} className={this.state.classButtonNewGame} onClick={this.props.newGame}>Play Again</button>
                 </div>
             </div>
