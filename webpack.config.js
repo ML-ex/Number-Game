@@ -16,7 +16,11 @@ rules: [
 test: /.(js|jsx)$/,
 use: 'babel-loader',
 exclude: /node_modules/
-}
+},
+{
+test: /\.css$/i,
+use: ["style-loader", "css-loader"],
+  },
 ]
 },
 devServer: {
@@ -26,3 +30,4 @@ directory: './dist'
 }
 };
 module.exports = config;
+

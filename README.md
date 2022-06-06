@@ -11,10 +11,102 @@ If the number is higher than the correct number, they should get a message telli
 
 If the number is lower than the correct number, they should get a message telling them that the number they guessed was too low. 
 
-However, if they fail to get the correct number after 3 tries, regardless of whether the number they put in was high or low, they should get a message that they failed and also the number they should have guessed.  
+However, if they fail to get the correct number after 3 tries, regardless of whether the number they put in was high or low, they should get a message that they failed and also the number they should have guessed.
 
-The game should also keep their wins vs losses for as long as the window is open (so if they were to close the window, they would lose all the stats. Unless they are logged in, if they have an account and log in, they should always be able to view the number of games won and Number of games lost cumulatively)
-
-## Technologies Used
+### Technologies Used
 Javascript and its frameworks(React,Node js,Express Js)
+* Node.js - Javascript runtime
+* React - A javascript library for building user interfaces
+* Babel - A transpiler for javascript
+* Webpack - A module bundler
+* Bootstrap - An open source toolkit for developing with HTML, CSS, and JS
 
+## Coming Soon
+
+* A panel to display wins vs losses for as long as the window is open. 
+
+* Registration of an account and log-in possibility into the Game, to save and always be able to view the Number of games played and won and/or lost cumulatively.
+
+* Multi player possibility where you invite and compete with a friend and not always a computer.
+
+## Getting Started
+
+These instructions will install a copy of the project on your local machine for development and testing purposes.
+
+### Prerequisites
+The following software is required to be installed on your system:
+
+```bash
+Node 16.x
+```
+```bash
+Npm 8.x
+```
+
+Type the following commands in the terminal to verify your node and npm versions
+
+```bash
+node -v
+```
+```bash
+npm -v
+```
+
+### Install
+Follow the following steps to get development environment running.
+
+* Clone 'Number-Game' repository from GitHub
+
+```bash
+git clone https://github.com/ML-ex/Number-Game.git
+```
+
+ OR USING SSH
+
+```bash
+git clone git@github.com/ML-ex/Number-Game.git
+```
+
+* Locate the Game folder locally 
+
+```bash
+cd Number-Game
+```
+
+* Install node modules
+
+```bash
+npm install
+```
+
+### Build
+Build application
+
+* This command will also run ESLint as part of build process.
+
+```bash
+npm run build
+```
+
+### Run ESlint
+
+* Lint project using ESLint
+
+```bash
+npm run lint
+```
+
+### Run
+
+* Run start
+
+This will run the 'serve' npm task
+
+```bash
+npm start
+```
+* Navigate to the link to view the app
+
+```bash 
+http://localhost:3000
+```
