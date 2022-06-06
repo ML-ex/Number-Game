@@ -80,17 +80,13 @@ npm install
 ```
 
 ### Build
-* Build application
+Build application
 
-** This command will also run ESLint as part of build process.
+* This command will also run ESLint as part of build process.
 
+```bash
 npm run build
-
-* Build application and start watching for changes
-
-** This command will also run ESLint as part of build process.
-
-npm run build:watch
+```
 
 ### Run ESlint
 
@@ -109,4 +105,8 @@ This will run the 'serve' npm task
 ```bash
 npm start
 ```
-Go to ```bash http://localhost:3000``` to view the app
+* Navigate to the link to view the app
+
+```bash 
+http://localhost:3000
+```
