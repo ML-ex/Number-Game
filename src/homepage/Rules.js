@@ -9,6 +9,7 @@ class Rules extends React.Component {
             backgroundColor: "#83D9DE",
             padding: "10px",
             fontFamily: "inter",
+            fontSize:"16px",
             lineHeight: "26px",
             width: "600px",
             marginLeft: "15px"
