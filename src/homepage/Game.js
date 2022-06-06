@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class Game extends Component {
 
     constructor(props){
@@ -11,7 +12,7 @@ class Game extends Component {
             lowOrHi: "",
             guessCount: 1,
             classLastResult: "",
-            classButtonNewGame: 'd-none'
+            classButtonNewGame: 'd-none',
         };
 
         this.checkGuess = this.checkGuess.bind(this);
@@ -57,11 +58,10 @@ class Game extends Component {
                     lowOrHi: "",
                     classLastResult: "m-1 p-1 bg-danger",
                     classButtonNewGame: "btn btn-primary m-2",
+                    
                 });
                 this.submitGuess.setAttribute("disabled", "disabled");
                 this.guessNumber.setAttribute("disabled", "disabled");
-
-
             } else if (guessValue > randomValue) {
                 this.setState({
                     lastResult: "Wrong!",
@@ -83,9 +83,9 @@ class Game extends Component {
         return(
             <div>
                 <form className="form-inline" onSubmit={this.checkGuess}>
-                        <h3 className="m-2">Give It A Try Below:</h3>
+                        <h3 style = {{textAlign: "center",fontWeight:"bold"}}>Give It A Try Below</h3>
                         <input name="guessNumber" type="number" min="1" max="10" ref={(input) => {this.guessNumber = input;}} className="form-control m-2"/>
-                        <button type="submit" ref={(button) => {this.submitGuess = button;}} className="btn btn-primary m-2">GUESS!</button>
+                        <button type="submit" ref={(button) => {this.submitGuess = button;}} className="btn btn-primary m-2" style ={{fontWeight:"bold"}}>GUESS</button>
                 </form>
                 <div>
                     <p className="m-2">{this.state.guesses}</p>
