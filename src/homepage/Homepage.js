@@ -11,7 +11,6 @@ class Homepage extends React.Component {
         const cardStyle = {
             backgroundColor: "#83D9DE",
             padding: "10px",
-            fontFamily: "Sans-Serif",
             fontSize: "14px",
             width: "950px",
             height: "600px",
@@ -25,7 +24,7 @@ class Homepage extends React.Component {
             style = { cardStyle } >
             <h1 style = {
                 { color: "red", textAlign: "center", letterSpacing: "0.13em " }
-            } > Guess the Number </h1 >  <Rules / > < Results / > 
+            } > Guess the Number </h1> <Rules/> <Results/> 
             </div>            
              </>
         );
