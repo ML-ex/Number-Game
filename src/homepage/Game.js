@@ -53,7 +53,7 @@ class Game extends Component {
 
             } else if (this.state.guessCount === 3) {
                 this.setState({
-                    lastResult: `${'GAME OVER!! the correct number is'} ${Math.floor(Math.random() *10) + 1}`,
+                    lastResult: "GAME OVER!!",
                     lowOrHi: "",
                     classLastResult: "m-1 p-1 bg-danger",
                     classButtonNewGame: "btn btn-primary m-2",
@@ -73,7 +73,7 @@ class Game extends Component {
                     lastResult: "Wrong!",
                     lowOrHi: "Last guess was too low!",
                     classLastResult: "m-2 p-1 bg-danger"
-                })
+                });
             } 
 
         }
